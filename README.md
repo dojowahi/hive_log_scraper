@@ -6,8 +6,7 @@ By getting a list of most used tables, we can focus more time on these tables th
 script which copies hive logs to a tmp location and then the logs are parsed by a Python script to get a list of all tables.
 
 #### get_hive_query.sh
-If you want to review all the queries executed in Hive and execution time, then this script will capture all the succesful queries executed
-along with their time taken.
+If you want to review all the queries executed in Hive and execution time, then this script will capture all the succesful queries executed along with their time taken.
 
 ### Prerequisites
 
@@ -18,4 +17,5 @@ at the end of the process. Once you have the directories created, go to the glob
 should be all set.
 
 All tests were done on Hive 2.3.3
+GNU parallel needs to be installed on machine
 
