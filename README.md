@@ -10,12 +10,11 @@ If you want to review all the queries executed in Hive and execution time, then 
 
 ### Prerequisites
 
-It is assumed that property.hive.log.level is set to INFO in hive-log4j2.properties.
-
 You will need to create directories to store the scripts, logs and a location where the hive logs will be copied. The copied logs are deleted
 at the end of the process. Once you have the directories created, go to the global_var.sh and update the parameters accordingly and you 
 should be all set.
 
 All tests were done on Hive 2.3.3
 GNU parallel needs to be installed on machine
+property.hive.log.level is set to INFO in hive-log4j2.properties
 
