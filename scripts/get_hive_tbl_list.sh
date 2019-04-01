@@ -6,6 +6,8 @@
 # Author: Ankur Wahi
 #####################################################################################################
 
+script_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
 
 display_usage()
 
@@ -13,23 +15,22 @@ display_usage()
 
  echo >&2
  echo "Usage: Get list of hive tables queries by scraping hive logs " >&2
- echo "Syntax: `basename $0` HiveLogLocation" >&2
- echo "Ex:  sh `basename $0` /mnt/var/log/hive" >&2
+ echo "Syntax: `basename $0` " >&2
+ echo "Ex:  sh `basename $0` " >&2
  echo >&2
  exit 22
 
 }
 
-hive_log_loc=$1
 
 
-if [ $# -ne 1 ]
+if [ $# -gt 0 ]
 then
   echo "Error: Wrong number of parameters"
   display_usage
 fi
 
-source global_var.sh
+source ${script_path}/global_var.sh
 cp ${hive_log_loc}/hive*log* ${tmp_loc}/
 
 gunzip ${tmp_loc}/hive-server2*.gz
