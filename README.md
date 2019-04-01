@@ -14,7 +14,7 @@ You will need to create directories to store the scripts, logs and a location wh
 at the end of the process. Once you have the directories created, go to the global_var.sh and update the parameters accordingly and you 
 should be all set.
 
-All tests were done on Hive 2.3.3
-GNU parallel needs to be installed on machine
-property.hive.log.level is set to INFO in hive-log4j2.properties
+* All tests were done on Hive 2.3.3
+* GNU parallel needs to be installed on machine
+* property.hive.log.level is set to INFO in hive-log4j2.properties
 
