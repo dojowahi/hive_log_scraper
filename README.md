@@ -1,12 +1,15 @@
 # Hive Log Scraper
 
-#### get_hs2_table.sh
+#### get_hive_tbl_list.sh
 When we have a huge amount of tables in a Hive warehouse, we want to know what tables are queried most often by users.
 By getting a list of most used tables, we can focus more time on these tables than others. The code in this repository is based on a shell 
 script which copies hive logs to a tmp location and then the logs are parsed by a Python script to get a list of all tables.
 
 #### get_hive_query.sh
 If you want to review all the queries executed in Hive and execution time, then this script will capture all the succesful queries executed along with their time taken.
+
+#### sql_parse_test.py
+The python script parses any sql passed to it and returns table names
 
 ### Prerequisites
 
